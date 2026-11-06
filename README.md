@@ -1,9 +1,6 @@
-LINK DO FIGMA
+# Ione faça o seu por favor.
 
-https://www.figma.com/design/DTWL549RTgFl28tVrWxldS/Reposit%C3%B3rio-de-projetos-senac?node-id=0-1&t=8Txa9iMbiEXxFOdE-1
+## Link do Protótipo Figma
 
-
-
-** Ione faça o seu por favor. !!!!!!!!!!
-kskskssksks
+***https://www.figma.com/design/DTWL549RTgFl28tVrWxldS/Reposit%C3%B3rio-de-projetos-senac?node-id=0-1&t=DW6OSYqU9BuYBw6I-1***
 daffsadg~j phaggpapnpjidgpjhgagpijpgoskjbagjksgnjkgfjghjghfjggbgb

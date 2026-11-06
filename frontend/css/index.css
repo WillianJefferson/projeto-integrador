@@ -1,0 +1,25 @@
+/* Made by Lucas Ferreira Silva */
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header > div > img {
+  width: 100px;
+}
+
+header > div > span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color1);
+}
+
+header > nav {
+  display: flex;
+}

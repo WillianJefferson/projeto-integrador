@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Projeto Integrador</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark"></span>
+      <span class="brand-name">Projeto<br>Integrador</span>
+      <span class="brand-sub">Plataforma de Portfólio Acadêmico</span>
+    </a>
+    <nav>
+      <a href="#">Início</a>
+      <a class="active" href="#">Projetos</a>
+      <a href="#">Perfil</a>
+      <button class="login">♙ Login</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Projetos</h1>
+      <p>Explore os projetos desenvolvidos por nossos estudantes,<br> conheça as soluções, tecnologias e equipes envolvidas.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">💻 📚</div>
+  </section>
+
+  <main>
+    <div class="search-row">
+      <label class="search-wrap">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Buscar projetos por título, tecnologia, tema ou equipe...">
+      </label>
+      <button class="search-btn" id="searchButton">Buscar</button>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">⚑ Filtrar por tecnologia:</span>
+      <button class="chip active" data-filter="all">Todas</button>
+      <button class="chip" data-filter="React">⚛ React</button>
+      <button class="chip" data-filter="Spring Boot">🍃 Spring Boot</button>
+      <button class="chip" data-filter="Python">🐍 Python</button>
+      <button class="chip" data-filter="Node.js">⬡ Node.js</button>
+      <button class="chip" data-filter="Flutter">◈ Flutter</button>
+      <button class="chip" data-filter="PHP">PHP</button>
+      <button class="chip" data-filter="MySQL">🐬 MySQL</button>
+      <button class="more" id="moreFilters">Mais filtros⌄</button>
+    </div>
+
+    <div class="toolbar">
+      <span><strong id="resultCount">48</strong> projetos encontrados</span>
+      <div class="toolbar-right">
+        <label for="sort">Ordenar por:</label>
+        <select id="sort">
+          <option value="recent">Mais recentes</option>
+          <option value="old">Mais antigos</option>
+          <option value="az">Nome (A-Z)</option>
+        </select>
+        <button class="view-btn selected" title="Visualização em grade">▦</button>
+        <button class="view-btn" title="Visualização em lista">☰</button>
+      </div>
+    </div>
+
+    <section class="projects" id="projects">
+      <article class="project-card" data-tech="React Node.js MySQL" data-date="6" data-title="SIGA Acadêmico">
+        <div class="thumb t-blue">🎓</div><div class="project-info">
+          <span class="category">Educação</span><h2>SIGA Acadêmico</h2>
+          <p>Sistema web para gestão de atividades acadêmicas, prazos, notas e acompanhamento do desempenho.</p>
+          <div class="tags"><span class="tag">⚛ React</span><span class="tag">⬡ Node.js</span><span class="tag">🐬 MySQL</span></div>
+          <div class="card-bottom"><span class="team">♙ Equipe TechLearn</span><span class="open-project">↗</span></div>
+        </div>
+      </article>
+      <article class="project-card" data-tech="Flutter Firebase Dart" data-date="5" data-title="Bem-Estar Universitário">
+        <div class="thumb t-pink">💜</div><div class="project-info">
+          <span class="category health">Saúde</span><h2>Bem-Estar Universitário</h2>
+          <p>Aplicativo móvel para promoção da saúde mental e bem-estar de estudantes, com exercícios e apoio.</p>
+          <div class="tags"><span class="tag">◈ Flutter</span><span class="tag">Firebase</span><span class="tag">Dart</span></div>
+          <div class="card-bottom"><span class="team">♙ Equipe Equilíbrio</span><span class="open-project">↗</span></div>
+        </div>
+      </article>
+      <article class="project-card" data-tech="Spring Boot React PostgreSQL" data-date="4" data-title="EcoCampus">
+        <div class="thumb t-green">🌱</div><div class="project-info">
+          <span class="category green">Sustentabilidade</span><h2>EcoCampus</h2>
+          <p>Plataforma para gestão da coleta seletiva no campus, com pontos de descarte, acompanhamento e indicadores.</p>
+          <div class="tags"><span class="tag">🍃 Spring Boot</span><span class="tag">⚛ React</span><span class="tag">PostgreSQL</span></div>
+          <div class="card-bottom"><span class="team">♙ Equipe VerdeTech</span><span class="open-project">↗</span></div>
+        </div>
+      </article>
+      <article class="project-card" data-tech="React Node.js MongoDB" data-date="3" data-title="Campus Conecta">
+        <div class="thumb t-orange">📱</div><div class="project-info">
+          <span class="category" style="background:#fff0e7;color:#d87536">Mobilidade</span><h2>Campus Conecta</h2>
+          <p>Aplicativo de mobilidade que exibe rotas, horários e localização dos ônibus internos do campus.</p>
+          <div class="tags"><span class="tag">⚛ React Native</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          <div class="card-bottom"><span class="team">♙ Equipe Mobiliza</span><span class="open-project">↗</span></div>
+        </div>
+      </article>
+      <article class="project-card" data-tech="Java Spring Boot MySQL" data-date="2" data-title="Controle de Projetos PI">
+        <div class="thumb t-purple">📈</div><div class="project-info">
+          <span class="category">Gestão</span><h2>Controle de Projetos PI</h2>
+          <p>Sistema para planejamento, execução e acompanhamento de projetos acadêmicos, permitindo controle de prazos.</p>
+          <div class="tags"><span class="tag">Java</span><span class="tag">🍃 Spring Boot</span><span class="tag">🐬 MySQL</span></div>
+          <div class="card-bottom"><span class="team">♙ Equipe Agile PI</span><span class="open-project">↗</span></div>
+        </div>
+      </article>
+      <article class="project-card" data-tech="Python FastAPI InfluxDB" data-date="1" data-title="AgroSmart">
+        <div class="thumb t-green">🪴</div><div class="project-info">
+          <span class="category green">Agronegócio</span><h2>AgroSmart</h2>
+          <p>Solução IoT para monitoramento de cultivo, com coleta de dados de umidade, temperatura e irrigação automatizada.</p>
+          <div class="tags"><span class="tag">🐍 Python</span><span class="tag">FastAPI</span><span class="tag">InfluxDB</span></div>
+          <div class="card-bottom"><span class="team">♙ Equipe AgroLab</span><span class="open-project">↗</span></div>
+        </div>
+      </article>
+      <div class="empty" id="empty">Nenhum projeto encontrado com esses critérios.</div>
+    </section>
+
+    <div class="pagination">
+      <button class="page">‹ Anterior</button><button class="page active">1</button>
+      <button class="page">2</button><button class="page">3</button><button class="page">4</button>
+      <button class="page">5</button><span>...</span><button class="page">8</button><button class="page">Próximo ›</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark"></span><span class="brand-name">Projeto<br>Integrador</span>
+        <span class="brand-sub">Plataforma de Portfólio Acadêmico</span>
+      </div>
+      <div class="footer-col"><h3>Navegação</h3><a href="#">Início</a><a href="#">Projetos</a><a href="#">Perfil</a></div>
+      <div class="footer-col"><h3>Institucional</h3><a href="#">Sobre a Plataforma</a><a href="#">Termos de Uso</a><a href="#">Privacidade</a></div>
+      <div class="footer-col"><h3>Siga-nos</h3><div class="social"><span>in</span><span>▶</span><span>◎</span></div></div>
+    </div>
+    <div class="copyright"><span>© 2025 Projeto Integrador. Plataforma acadêmica para divulgação de projetos estudantis.</span><span>Desenvolvido para a comunidade acadêmica</span></div>
+  </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

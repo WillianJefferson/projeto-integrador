@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publicar Projeto - SENAC</title>
+    <link rel="stylesheet" href="../css/publicar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="modal">
+        <header class="modal-header">
+          <h2>
+            <i class="fa-solid fa-laptop-code"></i>
+            Enviar Projeto
+          </h2>
+          <button id="btnClose" class="btn-close" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </header>
+        <section class="usuario">
+          <img
+            src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/590760488_1688245582107677_5351618451656339545_n.jpg?ccb=11-4&oh=01_Q5Aa5AG6tewwRM908wrKFIy0IimCIgLGQZKVFsSz5VamDLigUQ&oe=6A6DCBD0&_nc_sid=5e03e0&_nc_cat=103"
+            class="avatar"
+            alt="Usuário"
+          />
+          <div>
+            <h3>Kennedy Henrique</h3>
+            <select id="visibilidade">
+              <option value="Público">Público</option>
+              <option value="Somente Turma">Somente Turma</option>
+              <option value="Privado">Privado</option>
+            </select>
+          </div>
+        </section>
+        <form id="formProjeto">
+          <input
+            type="text"
+            id="titulo"
+            placeholder="Título do Projeto"
+            required
+          />
+
+          <!-- ==========================================
+EDITOR DE DESCRIÇÃO
+========================================== -->
+          <div class="editor-container">
+            <label> Descrição do Projeto </label>
+            <div
+              id="editorDescricao"
+              class="editor-descricao"
+              contenteditable="true"
+              data-placeholder="Conte um pouco sobre seu projeto..."
+            ></div>
+            <div id="areaDropDescricao" class="area-drop-descricao">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <p>Arraste imagens ou PDFs aqui</p>
+              <span> ou clique para selecionar </span>
+            </div>
+            <input
+              type="file"
+              id="arquivosDescricao"
+              accept="image/*,.pdf"
+              multiple
+              hidden
+            />
+          </div>
+          <input
+            type="text"
+            id="tecnologias"
+            placeholder="Tecnologias utilizadas: HTML, CSS, JavaScript, React..."
+          />
+
+          <!-- ==========================================
+PASTA DO PROJETO
+========================================== -->
+          <div class="upload">
+            <label class="drop-area">
+              <i class="fa-solid fa-folder-open"></i>
+              <h3>Arraste a pasta do projeto</h3>
+              <p>ou clique para selecionar</p>
+              <input
+                type="file"
+                id="pastaProjeto"
+                webkitdirectory
+                directory
+                multiple
+                hidden
+              />
+            </label>
+          </div>
+
+          <div id="listaArquivos" class="lista-arquivos">
+            Nenhuma pasta selecionada.
+          </div>
+
+          <!-- ==========================================
+                 ANEXOS
+========================================== -->
+
+          <div class="barra-anexos">
+            <button type="button" id="btnImagem" title="Adicionar imagem">
+              <i class="fa-solid fa-image"></i>
+            </button>
+
+            <button type="button" id="btnVideo" title="Adicionar vídeo">
+              <i class="fa-solid fa-video"></i>
+            </button>
+
+            <button type="button" id="btnPdf" title="Adicionar PDF">
+              <i class="fa-solid fa-file-pdf"></i>
+            </button>
+
+            <button type="button" id="btnGithub" title="Adicionar GitHub">
+              <i class="fa-brands fa-github"></i>
+            </button>
+
+            <button type="button" id="btnLink" title="Adicionar demonstração">
+              <i class="fa-solid fa-link"></i>
+            </button>
+          </div>
+
+          <input
+            type="file"
+            id="inputImagem"
+            accept="image/*"
+            multiple
+            hidden
+          />
+
+          <input type="file" id="inputVideo" accept="video/*" hidden />
+          <input type="file" id="inputPdf" accept=".pdf" hidden />
+          <div id="anexos" class="anexos"></div>
+          <div class="links">
+            <input type="url" id="github" placeholder="Link do GitHub" />
+            <input type="url" id="demo" placeholder="Link da Demonstração" />
+          </div>
+          <footer class="acoes">
+            <button type="button" class="cancelar">Cancelar</button>
+            <button type="submit" class="publicar">
+              <i class="fa-solid fa-upload"></i>
+              Enviar Projeto
+            </button>
+          </footer>
+        </form>
+      </div>
+    </div>
+    <script src="../frontend/js/publicar.js"></script>
+  </body>
+</html>
