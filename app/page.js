@@ -45,7 +45,7 @@ const projects = [
     team: "Equipe Equilíbrio",
     image: "/image-cell-phone-1.png",
   },
-];
+];  
 
 export default function Home() {
   return (

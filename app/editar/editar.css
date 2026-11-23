@@ -1,0 +1,249 @@
+:root {
+  /* Background Colors */
+  --bgColor1: #fefefe;
+  --bgColor2: #f2f6fc;
+  --bgColor3: #c1cad7;
+  --bgColor4: #8d929a;
+  /* Primary Colors */
+  --colorA1: #f45e02;
+  --colorA2: #fe8b1d;
+  --colorA3: #fde3d0;
+  /* Secondary Colors */
+  --colorB1: #174380;
+  --colorB2: #1768b8;
+  --colorB3: #d3e8fd;
+  /* Tertiary Colors */
+  --colorC1: #783bdd;
+  --colorC2: #ece8fd;
+  /* Quaternary Colors */
+  --colorD1: #5c9d57;
+  --colorD2: #d7edcb;
+  /* Text Colors */
+  --txtColor1: white;
+  --txtColor2: #0c1840;
+  /* Atention Colors */
+  --colorE1: #ed4848;
+  --colorE2: #af3e3e;
+  /* Link Color*/
+  --linkColor: #1e67f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 30px 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 22px;
+}
+
+.editCard {
+    width: min(422px, 100%);
+    margin: auto;
+    padding: 12px 20px 22px;
+    background: #fff8f1;
+}
+
+.landscape {
+    height: 190px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 4px #0002;
+    background: linear-gradient(#79958b, #a4b78c 38%, #255333 57%, #75a040 58%, #adc35a);
+}
+
+.hills {
+    position: absolute;
+    top: 34px;
+    left: -5%;
+    width: 110%;
+    height: 95px;
+    background: linear-gradient(145deg, #355d32, #55783d);
+    clip-path: polygon(0 65%, 20% 35%, 36% 48%, 55% 18%, 72% 40%, 100% 10%, 100% 100%, 0 100%);
+}
+
+.trees {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #214c2c;
+    clip-path: polygon(0 60%, 7% 15%, 12% 65%, 20% 5%, 28% 72%, 37% 20%, 45% 80%, 55% 10%, 63% 70%, 74% 15%, 84% 80%, 92% 12%, 100% 55%, 100% 100%, 0 100%);
+}
+
+.field {
+    position: absolute;
+    left: -10%;
+    width: 120%;
+    border-radius: 50%;
+}
+
+.fieldA {
+    bottom: 24px;
+    height: 80px;
+    background: linear-gradient(#82a53f, #537b30);
+}
+
+.fieldB {
+    bottom: -48px;
+    height: 100px;
+    background: linear-gradient(170deg, #b3c85c, #4d792d);
+}
+
+.tree {
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+    width: 90px;
+    height: 150px;
+}
+
+.tree b {
+    position: absolute;
+    right: -18px;
+    top: 0;
+    width: 112px;
+    height: 105px;
+    background: radial-gradient(ellipse at 30% 35%, #75934b, #3d662e 62%, #254d28);
+    border-radius: 58% 43% 52% 50%;
+    box-shadow: -20px 18px 0 -6px #497338, 12px 23px 0 -8px #365d2d;
+}
+
+.tree i {
+    position: absolute;
+    bottom: 0;
+    right: 23px;
+    width: 13px;
+    height: 83px;
+    background: linear-gradient(90deg, #4a3524, #725337);
+    transform: rotate(8deg);
+}
+
+.inputRow,
+.descriptionRow {
+    display: flex;
+    width: 100%;
+    background: #ffefdf;
+    border: 1px solid #f4e2d1;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px #0002;
+    padding: 8px 5px;
+    margin-bottom: 9px;
+    font-size: 10px;
+}
+
+.inputRow {
+    align-items: center;
+    min-height: 24px;
+}
+
+.descriptionRow {
+    align-items: flex-start;
+    height: 74px;
+}
+
+.inputRow span,
+.descriptionRow span {
+    flex: 0 0 auto;
+    margin-right: 8px;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-family: inherit;
+    font-size: 10px;
+    color: #333;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a4a0a0;
+}
+
+input:disabled,
+textarea:disabled {
+    color: #555;
+    opacity: 1;
+}
+
+.saved {
+    color: #248148;
+    font-size: 11px;
+    margin: -2px 0 8px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 17px;
+}
+
+.right {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 9px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    min-height: 23px;
+}
+
+.delete {
+    background: var(--colorE1);
+}
+
+.save {
+    background: var(--colorA1)
+}
+
+.edit {
+    background: var(--colorB2)
+}
+
+@media (max-width: 480px) {
+    .page {
+        padding: 24px 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .editCard {
+        padding: 12px 14px 20px;
+    }
+
+    .landscape {
+        height: 175px;
+    }
+}
