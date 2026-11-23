@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  /* Background Colors */
+  --bgColor1: #fefefe;
+  --bgColor2: #f2f6fc;
+  --bgColor3: #c1cad7;
+  --bgColor4: #8d929a;
+  /* Primary Colors */
+  --colorA1: #f45e02;
+  --colorA2: #fe8b1d;
+  --colorA3: #fde3d0;
+  /* Secondary Colors */
+  --colorB1: #174380;
+  --colorB2: #1768b8;
+  --colorB3: #d3e8fd;
+  /* Tertiary Colors */
+  --colorC1: #783bdd;
+  --colorC2: #ece8fd;
+  /* Quaternary Colors */
+  --colorD1: #5c9d57;
+  --colorD2: #d7edcb;
+  /* Text Colors */
+  --txtColor1: white;
+  --txtColor2: #0c1840;
+  /* Atention Colors */
+  --colorE1: #ed4848;
+  --colorE2: #af3e3e;
+  /* Link Color*/
+  --linkColor: #1e67f0;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+body {
+  font-family: var(--font-poppins, Arial, Helvetica, sans-serif);
+}
+
+.shadow-t {
+  box-shadow: 0px -6px 8px var(--bgColor3);
+}
+.shadow-b {
+  box-shadow: 0px 6px 8px var(--bgColor3);
+}
+
+.button-gradient {
+  background: linear-gradient(0deg, var(--colorA1), var(--colorA2));
+  font-weight: bold;
+  color: var(--txtColor1);
+  transition: 0.5s;
+}
+.button-gradient:hover {
+  transform: scale(95%);
+  filter: brightness(95%);
+}
